@@ -11,7 +11,7 @@ public class Bootcamp {
     private final LocalDate dataInicial = LocalDate.now();
     private final LocalDate dataFinal = dataInicial.plusDays(45);
     Set<Dev> devsInscritos = new HashSet<>();
-    Set<Conteudo> conteudosBootcamp = new LinkedHashSet<>();
+    Set<Conteudo> conteudos = new LinkedHashSet<>();
     public String getNome() {
         return nome;
     }
@@ -36,20 +36,18 @@ public class Bootcamp {
     public void setDevsInscritos(Set<Dev> devsInscritos) {
         this.devsInscritos = devsInscritos;
     }
-    public Set<Conteudo> getConteudosBootcamp() {
-        return conteudosBootcamp;
+    public Set<Conteudo> getConteudos() {
+        return conteudos;
     }
-    public void setConteudosBootcamp(Set<Conteudo> conteudosBootcamp) {
-        this.conteudosBootcamp = conteudosBootcamp;
+    public void setConteudos(Set<Conteudo> conteudosBootcamp) {
+        this.conteudos = conteudosBootcamp;
     }
     @Override
     public boolean equals(Object obj) {
-        // TODO Auto-generated method stub
         return super.equals(obj);
     }
     @Override
     public int hashCode() {
-        // TODO Auto-generated method stub
         return super.hashCode();
     }
 }
